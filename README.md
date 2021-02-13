@@ -15,5 +15,5 @@
 - Learn about atomic design principles.
 
 ### Challenges
-- I struggled to figure out how to make a state Array that will only allow objects of the shape defined by the api call and to then pass it along as props to children. 
+- I struggled to figure out how to make a state Array that will only allow objects of the type and shape defined by the api call and to then pass it along as props to children. 
 - I also struggled a little bit passing on the state and setState function and setting the correct type in the children.
