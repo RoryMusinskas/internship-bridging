@@ -1,5 +1,7 @@
 # Internship bridging project
 
+![IndexPage gif](./IndexPage.gif)
+
 ### Objectives
 - Fetch API data
 - Display API data
