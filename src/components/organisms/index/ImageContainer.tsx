@@ -12,15 +12,14 @@ const Container = styled.div`
 // setting the type for the allowed props
 type Props = {
   url: string;
-  explanation: string;
 };
 
 export const ImageContainer: React.FC<Props> = (props) => {
-  const { url, explanation } = props;
+  const { url } = props;
 
   return (
     <Container>
-      <Image url={url} explanation={explanation} alt="Nasa shot of the day" />
+      <Image url={url} alt="Nasa shot of the day" />
     </Container>
   );
 };

@@ -24,10 +24,9 @@ type Props = {
 
 export const ApiResponseContainer: React.FC<Props> = (props) => {
   const { nasaData } = props;
-
   return (
     <Container>
-      <ImageContainer url={nasaData.url} explanation={nasaData.explanation} />
+      <ImageContainer url={nasaData.url} />
       <ImageFooter title={nasaData.title} />
     </Container>
   );

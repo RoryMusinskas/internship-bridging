@@ -11,7 +11,6 @@ const NasaImage = styled.img`
 // setting the allowed type of the props passed
 type Props = {
   url: string;
-  explanation: string;
   alt: string;
 };
 
