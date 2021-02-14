@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FavouritesSection } from "../organisms/index/FavouritesSection";
 import { MainSection } from "../organisms/index/MainSection";
+import { NasaData, Favourites } from "../app.model";
 
 // styles for the wrapper for the app
 const Wrapper = styled.section`
@@ -12,15 +13,9 @@ const Wrapper = styled.section`
   background: papayawhip;
 `;
 
-// setting the type of the favourites from the main section
-type Favourites = {
-  title: string;
-  url: string;
-};
-
 export const Index: React.FC = () => {
   // set the initial state for nasaData
-  const [nasaData, setNasaData] = useState({
+  const [nasaData, setNasaData] = useState<NasaData>({
     title: "",
     explanation: "",
     url: "",
@@ -31,7 +26,12 @@ export const Index: React.FC = () => {
   return (
     <Wrapper>
       <FavouritesSection favourites={favourites} />
-      <MainSection nasaData={nasaData} setNasaData={setNasaData} favourites={favourites} setFavourites={setFavourites} />
+      <MainSection
+        nasaData={nasaData}
+        setNasaData={setNasaData}
+        favourites={favourites}
+        setFavourites={setFavourites}
+      />
     </Wrapper>
   );
 };
