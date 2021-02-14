@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Favourites } from "../app.model";
 
 // styling of the NextButton
 const Button = styled.button`
@@ -12,12 +13,6 @@ const Button = styled.button`
   background-color: #03446a;
   color: white;
 `;
-
-// setting the type of the favorites object
-type Favourites = {
-  title: string;
-  url: string;
-};
 
 // set the types that the props can be
 type Props = {

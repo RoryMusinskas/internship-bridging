@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { NextButton } from "../../atoms/NextButton";
 import { FavouriteButton } from "../../atoms/FavouriteButton";
 import { ApiResponseContainer } from "./ApiResponseContainer";
+import { Favourites } from "../../app.model";
 
 // styling of the main container
 const Container = styled.section`
@@ -14,12 +15,6 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
 `;
-
-// setting the type for the favourites object
-type Favourites = {
-  title: string;
-  url: string;
-};
 
 // setting the type for the allowed props
 type Props = {

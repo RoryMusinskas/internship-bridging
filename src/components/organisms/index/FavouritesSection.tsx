@@ -5,6 +5,7 @@ import { Title } from "../../atoms/Title";
 import { ListItem } from "../../atoms/ListItem";
 import { Link } from "../../atoms/Link";
 import { List } from "../../molecules/List";
+import { Favourites } from "../../app.model";
 
 // styles for the favourites container
 const Container = styled.section`
@@ -16,12 +17,6 @@ const Container = styled.section`
   flex-direction: column;
   text-align: center;
 `;
-
-// setting the type for the favourites object
-type Favourites = {
-  title: string;
-  url: string;
-};
 
 // setting the type for the favourites array, it's an array of favourite objects
 type Props = {
