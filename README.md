@@ -1,4 +1,4 @@
-# Internship bridging project
+# Internship bridging project - Typescript
 
 ![IndexPage gif](./IndexPage.gif)
 
